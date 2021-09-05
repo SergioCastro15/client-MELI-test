@@ -1,0 +1,47 @@
+@import '../../scss/variables';
+
+.navbar-search {
+    background: $yellow;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form{
+        .input-search {
+            width: 700px;
+            height: 30px;
+            border: none;
+        }
+
+        button {
+            border: none;
+            height: 33px;
+            width: 50px;
+    
+            .lupa {
+                background: $gray-light;
+                height: 15px;
+            }
+    
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    .logo{
+        height: 30px;
+        margin-right: 15px;
+    }
+}
+
+::placeholder {
+    color: $gray;
+    opacity: 1;
+}
+
+input{
+    text-indent: 10px;
+}

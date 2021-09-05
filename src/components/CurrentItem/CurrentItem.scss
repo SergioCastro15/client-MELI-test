@@ -1,0 +1,43 @@
+@import '../../scss/variables';
+
+.card-item {
+    background: $white;
+    width: 60%;
+    border-bottom: 2px solid $gray-light;;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    :hover {
+        cursor: pointer;
+    }
+
+    .image-container {
+        width: 30%;
+    }
+    .card-picture {
+        width: 180px;
+        height: 180px;
+        border-radius: 4px;
+        object-fit: contain;
+    }
+
+    .card-text-container {
+        margin-top: $main-spacing;
+        margin-left: $main-spacing;
+        width: 70%;
+    }
+
+    .card-text{
+        text-align: initial;
+    }
+
+    .card-text-title {
+        margin-top: $second-spacing;
+    }
+
+    .card-currency {
+        color: $gray;
+    }
+}
