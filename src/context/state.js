@@ -41,7 +41,7 @@ const SearchState = ({ children }) => {
   return(
     <searchContext.Provider
       value={{
-        name: state.name,
+        items: state.items,
         currentSearch: state.currentSearch,
         getAllitems,
         getCurrentItem,

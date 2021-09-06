@@ -7,6 +7,8 @@ import './ListItem.scss'
 export const ListItem = () => {
     const { currentSearch, getAllitems } = useContext(searchContext)
     const [items, setItems] = useState([])
+    //const currentCategories = itemsCategory[0].categories.filter((_, index) => index < 5)
+
 
     useEffect(()=> {
         fetchData()
@@ -17,21 +19,25 @@ export const ListItem = () => {
         setItems(data)
     }
 
+    console.log("item", items)
+
 
     return (
-        <div className="list-container">
-            {   items.map(item => ((
-                    <CurrentItem
-                        key={item.items[0].id}
-                        id={item.items[0].id}
-                        picture={item.items[0].picture}
-                        price={item.items[0].price}
-                        title={item.items[0].title}
-                        free_shipping={item.items[0].free_shipping}
-                        condition={item.items[0].condition}
-                    />
-                )))
-            }
-        </div>
+        <>
+            <div className="list-container">
+                {   items.map(item => ((
+                        <CurrentItem
+                            key={item.items[0].id}
+                            id={item.items[0].id}
+                            picture={item.items[0].picture}
+                            price={item.items[0].price}
+                            title={item.items[0].title}
+                            free_shipping={item.items[0].free_shipping}
+                            condition={item.items[0].condition}
+                        />
+                    )))
+                }
+            </div>
+        </>
     )
 }

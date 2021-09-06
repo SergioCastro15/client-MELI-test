@@ -17,24 +17,39 @@
         width: 30%;
     }
     .card-picture {
-        width: 180px;
-        height: 180px;
+        width: 100%;
+        height: auto;
+        max-width: 180px;
+        max-height: 180px;
         border-radius: 4px;
         object-fit: contain;
     }
 
     .card-text-container {
         margin-top: $main-spacing;
-        margin-left: $main-spacing;
         width: 70%;
+
+        .price-box {
+            display: flex;
+            text-align: start;
+            align-content: center;
+        }
+
+        .carrito-image {
+            margin-left: 10px;
+            width: 18px;
+        }
+
+        // .carrito-image {
+        //     width: 18px;
+        //     position: relative;
+        //     right: 260px;
+        //     bottom: 30px;
+        // }
     }
 
     .card-text{
         text-align: initial;
-    }
-
-    .card-text-title {
-        margin-top: $second-spacing;
     }
 
     .card-currency {
@@ -43,7 +58,6 @@
 }
 
 // breakpoints
-
 @media (max-width: 768px) {
     .card-item {
         width: 100%;

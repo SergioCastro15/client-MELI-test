@@ -1,5 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
+import carrito from '../../carrito.png'
 import "./CurrentItem.scss"
 
 export const CurrentItem = ({
@@ -22,7 +23,10 @@ export const CurrentItem = ({
                 <img className="card-picture" src={picture} alt=""/>
             </div>
             <div className="card-text-container">
-                <p className="card-text">$ {price.amount}</p>
+                <div className="price-box">
+                    <span className="card-text">$ {price.amount}</span>
+                    { free_shipping && <img className="carrito-image" src={carrito} alt=""/>}
+                </div>
                 <p className="card-text card-text-title">{title}</p>
             </div>
             <p className="card-currency">{price.currency}</p>
