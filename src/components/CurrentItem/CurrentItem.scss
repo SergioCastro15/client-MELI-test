@@ -41,3 +41,28 @@
         color: $gray;
     }
 }
+
+// breakpoints
+
+@media (max-width: 768px) {
+    .card-item {
+        width: 100%;
+
+        .image-container {
+            width: 40%;
+        }
+    
+        .card-picture {
+            width: 90px;
+            height: 90px;
+            border-radius: 4px;
+            object-fit: contain;
+        }
+    
+        .card-text-container {
+            margin-top: $main-spacing;
+            margin-left: $main-spacing;
+            width: 60%;
+        }
+    }
+}

@@ -45,3 +45,24 @@
 input{
     text-indent: 10px;
 }
+
+// breakpoints 
+
+@media (max-width: 768px) {
+    .navbar-search {
+        form{
+            .input-search {
+                width: 250px;
+                height: 32px;
+            }
+    
+            button {
+                height: 35px;
+            }
+        }
+
+        .logo{
+            height: 25px;
+        }
+    }
+}
