@@ -25,7 +25,7 @@ export const Search = () => {
     const activeSearchButton = (e) => {
         e.preventDefault()
         getCurrentSearch(textValue.search)
-        history.push('/items?q=' + textValue.search)
+        history.push(`/items?q=${textValue.search}`)
     }
 
     return (

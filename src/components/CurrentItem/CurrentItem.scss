@@ -7,14 +7,13 @@
     margin: auto;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
 
     :hover {
         cursor: pointer;
     }
 
     .image-container {
-        width: 30%;
+        width: 20%;
     }
     .card-picture {
         width: 100%;
@@ -27,7 +26,7 @@
 
     .card-text-container {
         margin-top: $main-spacing;
-        width: 70%;
+        width: 50%;
 
         .price-box {
             display: flex;
@@ -39,13 +38,6 @@
             margin-left: 10px;
             width: 18px;
         }
-
-        // .carrito-image {
-        //     width: 18px;
-        //     position: relative;
-        //     right: 260px;
-        //     bottom: 30px;
-        // }
     }
 
     .card-text{
@@ -54,6 +46,9 @@
 
     .card-currency {
         color: $gray;
+        font-size: 12px;
+        width: 20%;
+        margin-top: 50px;
     }
 }
 
@@ -63,7 +58,7 @@
         width: 100%;
 
         .image-container {
-            width: 40%;
+            width: 30%;
         }
     
         .card-picture {
@@ -76,7 +71,14 @@
         .card-text-container {
             margin-top: $main-spacing;
             margin-left: $main-spacing;
-            width: 60%;
+            width: 40%;
+        }
+
+        .card-currency {
+            color: $gray;
+            font-size: 10px;
+            width: 20%;
+            margin-top: 15px;
         }
     }
 }

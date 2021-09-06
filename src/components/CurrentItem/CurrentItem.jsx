@@ -14,7 +14,7 @@ export const CurrentItem = ({
     const history = useHistory();
 
     const goToItemInfo = () => {
-        history.push('/items/' + id)
+        history.push(`/items/${id}`)
     }
 
     return (
