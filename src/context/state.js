@@ -13,19 +13,25 @@ const SearchState = ({ children }) => {
   const [state, dispatch] = useReducer(searchReducer, initialState)
 
   const getAllitems = async (query) => {
-    const items = await apiRepository.get(`/items?q=${query}`)
-    const { data } = items;
-    dispatch({ type: 'SET_ITEMS', payload: data })
-
-    return data
+    try {
+      const items = await apiRepository.get(`/items?q=${query}`)
+      const { data } = items;
+      dispatch({ type: 'SET_ITEMS', payload: data })
+      return data
+    } catch (error) {
+      return error
+    }
   }
 
   const getCurrentItem = async (params) => {
-    const item = await apiRepository.get(`/items/${params}`)
-    const { data } = item;
-    dispatch({ type: 'SET_ITEM', payload: data })
-
-    return data;
+    try {
+      const item = await apiRepository.get(`/items/${params}`)
+      const { data } = item
+      dispatch({ type: 'SET_ITEM', payload: data })
+      return data;
+    } catch (error) {
+      return error
+    }
   }
 
   const getCurrentSearch = (query) => {

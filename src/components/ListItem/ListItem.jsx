@@ -21,17 +21,15 @@ export const ListItem = () => {
     return (
         <div className="list-container">
             {   items.map(item => ((
-                    <>
-                        <CurrentItem
-                            key={item.items[0].id}
-                            id={item.items[0].id}
-                            picture={item.items[0].picture}
-                            price={item.items[0].price}
-                            title={item.items[0].title}
-                            free_shipping={item.items[0].free_shipping}
-                            condition={item.items[0].condition}
-                        />
-                    </>
+                    <CurrentItem
+                        key={item.items[0].id}
+                        id={item.items[0].id}
+                        picture={item.items[0].picture}
+                        price={item.items[0].price}
+                        title={item.items[0].title}
+                        free_shipping={item.items[0].free_shipping}
+                        condition={item.items[0].condition}
+                    />
                 )))
             }
         </div>
