@@ -8,8 +8,7 @@ export const CurrentItem = ({
     picture, 
     price, 
     title, 
-    free_shipping, 
-    condition
+    free_shipping,
 }) => {
     const history = useHistory();
 

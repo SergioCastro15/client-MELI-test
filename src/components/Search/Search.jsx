@@ -28,9 +28,13 @@ export const Search = () => {
         history.push(`/items?q=${textValue.search}`)
     }
 
+    const goToHome = () => {
+        history.push(`/`)
+    }
+
     return (
         <nav className="navbar-search">
-            <img className="logo" src={logo} alt="logo"/>
+            <img onClick={goToHome} className="logo" src={logo} alt="logo"/>
             <form onSubmit={activeSearchButton} >
                 <input
                     className="input-search"

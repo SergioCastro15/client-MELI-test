@@ -25,8 +25,9 @@ export const ItemInfo = ({ match }) => {
                         {
                             item && 
                             <>
+                                <p>{item.condition}</p>
                                 <h2>{item.item?.title}</h2>
-                                <p>$ {item.item?.price?.amount}</p>
+                                <p className="item-price">$ {item.item?.price?.amount}</p>
                                 <button className="item-info-button">Comprar</button>
                             </>
                         }

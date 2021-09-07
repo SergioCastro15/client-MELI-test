@@ -41,7 +41,6 @@ export const ListItem = () => {
                             price={item.items[0].price}
                             title={item.items[0].title}
                             free_shipping={item.items[0].free_shipping}
-                            condition={item.items[0].condition}
                         />
                     )))
                 }
