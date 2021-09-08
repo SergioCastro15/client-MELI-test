@@ -17,7 +17,7 @@ export const CurrentItem = ({
     }
 
     return (
-        <div onClick={goToItemInfo} className="card-item">
+        <div data-testid="go-to-item-info" onClick={goToItemInfo} className="card-item">
             <div className="image-container">
                 <img className="card-picture" src={picture} alt=""/>
             </div>

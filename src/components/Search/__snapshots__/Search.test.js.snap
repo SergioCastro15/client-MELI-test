@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="navbar-search"
+  >
+    <img
+      alt="logo"
+      class="logo"
+      data-testid="go-home"
+      src="logo.png"
+    />
+    <form
+      data-testid="go-items"
+    >
+      <input
+        class="input-search"
+        name="search"
+        placeholder="Nunca dejes de buscar"
+        type="text"
+      />
+      <button
+        type="submit"
+      >
+        <img
+          alt="lupa"
+          class="lupa"
+          src="lupa.png"
+        />
+      </button>
+    </form>
+  </nav>
+</DocumentFragment>
+`;

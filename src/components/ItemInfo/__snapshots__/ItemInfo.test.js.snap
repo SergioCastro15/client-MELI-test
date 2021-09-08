@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container-box"
+  >
+    <div
+      class="item-info-container"
+    >
+      <img
+        alt=""
+        class="item-info-picture"
+      />
+      <div
+        class="item-info-text"
+      >
+        <p />
+        <h2 />
+        <p
+          class="item-price"
+        >
+          $ 
+        </p>
+        <button
+          class="item-info-button"
+        >
+          Comprar
+        </button>
+      </div>
+    </div>
+    <div
+      class="description-container"
+    >
+      <h2
+        class="text-description-title "
+      >
+        Descripcion del producto
+      </h2>
+      <p
+        class="text-description"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

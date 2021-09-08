@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="bread-crumb-container"
+  >
+    <p
+      class="bread-crumb-info"
+    >
+      Audio
+    </p>
+    <p
+      class="bread-crumb-info"
+    >
+      Video
+    </p>
+    <p
+      class="bread-crumb-info"
+    >
+      Musica
+    </p>
+    <p
+      class="bread-crumb-info"
+    >
+      Entretenimiento
+    </p>
+    <p
+      class="bread-crumb-info"
+    >
+      Imagen
+    </p>
+  </div>
+</DocumentFragment>
+`;

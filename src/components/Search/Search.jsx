@@ -34,8 +34,8 @@ export const Search = () => {
 
     return (
         <nav className="navbar-search">
-            <img onClick={goToHome} className="logo" src={logo} alt="logo"/>
-            <form onSubmit={activeSearchButton} >
+            <img data-testid="go-home" onClick={goToHome} className="logo" src={logo} alt="logo"/>
+            <form data-testid="go-items" onSubmit={activeSearchButton} >
                 <input
                     className="input-search"
                     name="search"
